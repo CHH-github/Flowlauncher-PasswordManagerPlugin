@@ -1,0 +1,1 @@
+这是一个Flowlauncher的密码管理插件

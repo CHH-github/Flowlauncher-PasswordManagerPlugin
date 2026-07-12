@@ -1,0 +1,12 @@
+{
+  "ID": "password_manager_plugin",
+  "ActionKeyword": "p",
+  "Name": "密码管理器",
+  "Description": "管理您的密码，使用 p add 名称 账号 密码 添加，p 名称 查看",
+  "Author": "chh",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "Website": "https://github.com/yourusername/password-manager-plugin",
+  "IcoPath": "icon.png",
+  "ExecuteFileName": "PasswordManagerPlugin.dll"
+}
