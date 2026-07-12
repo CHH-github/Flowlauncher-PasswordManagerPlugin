@@ -39,7 +39,7 @@ namespace PasswordManagerPlugin
                 {
                     Title = "📖 使用帮助",
                     SubTitle = "p add 名称 账号 密码 - 添加或更新密码",
-                    IcoPath = "Images\\icon.png",
+                    IcoPath = "icon.png",
                     Action = _ =>
                     {
                         _context.API.ShowMsg("密码管理器", 
@@ -70,7 +70,7 @@ namespace PasswordManagerPlugin
                     {
                         Title = $"✅ 密码已保存",
                         SubTitle = $"名称: {name}, 账号: {username}",
-                        IcoPath = "Images\\icon.png",
+                        IcoPath = "icon.png",
                         Action = _ =>
                         {
                             _context.API.ShowMsg("成功", $"密码 '{name}' 已保存");
@@ -84,7 +84,7 @@ namespace PasswordManagerPlugin
                     {
                         Title = "❌ 添加失败",
                         SubTitle = "请检查参数格式: p add 名称 账号 密码",
-                        IcoPath = "Images\\icon.png"
+                        IcoPath = "icon.png"
                     });
                 }
                 return results;
@@ -100,7 +100,7 @@ namespace PasswordManagerPlugin
                     {
                         Title = $"✅ 已删除",
                         SubTitle = $"密码 '{name}' 已删除",
-                        IcoPath = "Images\\icon.png",
+                        IcoPath = "icon.png",
                         Action = _ =>
                         {
                             _context.API.ShowMsg("成功", $"密码 '{name}' 已删除");
@@ -114,7 +114,7 @@ namespace PasswordManagerPlugin
                     {
                         Title = "❌ 删除失败",
                         SubTitle = $"未找到密码 '{name}'",
-                        IcoPath = "Images\\icon.png"
+                        IcoPath = "icon.png"
                     });
                 }
                 return results;
@@ -135,7 +135,7 @@ namespace PasswordManagerPlugin
                     {
                         Title = "📭 暂无密码",
                         SubTitle = "使用 p add 名称 账号 密码 添加密码",
-                        IcoPath = "Images\\icon.png"
+                        IcoPath = "icon.png"
                     });
                 }
                 return results;
@@ -168,7 +168,7 @@ namespace PasswordManagerPlugin
                     {
                         Title = "🔍 未找到密码",
                         SubTitle = $"未找到名称包含 '{searchName}' 的密码",
-                        IcoPath = "Images\\icon.png",
+                        IcoPath = "icon.png",
                         Action = _ =>
                         {
                             _context.API.ShowMsg("未找到", $"密码 '{searchName}' 不存在");
@@ -187,7 +187,7 @@ namespace PasswordManagerPlugin
             {
                 Title = $"🔑 {entry.Name}",
                 SubTitle = $"账号: {entry.Username} | 点击复制账号/密码",
-                IcoPath = "Images\\icon.png",
+                IcoPath = "icon.png",
                 ContextData = entry,
                 Action = _ =>
                 {
